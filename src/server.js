@@ -22,8 +22,8 @@ app.use(express.urlencoded({extended:false}))
 //Globals
 
 //Routes
-
 app.use(require('./routes/index.routes'))
+app.use(require('./routes/tasks.routes'))
 
 //Static
 app.use(express.static(path.join(__dirname,'public')) )
