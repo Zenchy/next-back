@@ -1,27 +1,25 @@
-require('dotenv').config()
 const express = require('express')
 const path = require('path')
 
-//Init
+//Initializations
 const app = express()
 
 //Settings
 app.set('port', process.env.PORT || 5000)
 app.set('views', path.join(__dirname, 'views'))
 
-
 //Middlewares
-app.use(express.urlencoded({extended: false}))
+app.use(express.urlencoded({extended:false})) 
 
-//Globals 
+//Globals
 
 //Routes
-app.get('/', (req,res) =>{
-  res.send('Hello pipol!!!')
+
+app.get('/', (req, res) => {
+  res.send('WE ARE CONECTED')
 })
 
-//Statics
-app.use(express.static(path.join(__dirname, 'public')))
-
+//Static
+app.use(express.static(path.join(__dirname,'public')) )
 
 module.exports = app
