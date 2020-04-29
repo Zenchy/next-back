@@ -27,13 +27,15 @@
   },
   "homepage": "https://github.com/Zenchy/next-back#readme",
   "dependencies": {
+    "@handlebars/allow-prototype-access": "^1.0.3",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
-    "express-handlebars": "^4.0.3",
     "mongoose": "^5.9.10",
     "morgan": "^1.10.0"
   },
   "devDependencies": {
+    "express-handlebars": "^3.1.0",
+    "handlebars": "^4.4.0",
     "nodemon": "^2.0.3"
   }
 }
