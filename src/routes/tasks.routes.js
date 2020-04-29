@@ -13,7 +13,7 @@ const {
 //New task
 router.get('/tasks/add', renderTaskForm)
 
-router.post('tasks/add', createNewTask)
+router.post('/tasks/new-task', createNewTask)
 
 //Get all tasks
 

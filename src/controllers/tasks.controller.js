@@ -1,8 +1,13 @@
 const tasksCtrl = {}
 
-tasksCtrl.renderTaskForm = (req,res) => res.send('Task added')
+tasksCtrl.renderTaskForm = (req,res) => {
+  res.render('tasks/new-task')
+}
 
-tasksCtrl.createNewTask = (req, res) => res.send('New task created')
+tasksCtrl.createNewTask = (req, res) => {
+console.log(req.body)
+res.send('ihihihih')
+}
 
 tasksCtrl.renderTasks = (req, res) => res.send('All tasks')
 
